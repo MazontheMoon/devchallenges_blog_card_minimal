@@ -39,9 +39,11 @@
  Keyword: Description FILE
 
  Examples:
+ * create: Added new document INDEX
+ * new: Adding new content for sectionB INDEX
+ * update: Added info to existing section on INDEX
  * fix: Typo in sectionA content INDEX
  * style: Added colour schema to page STYLESHEET
- * new: Adding new content for sectionB INDEX
  * docs: Added naming convention rules to README
  * test: Testing accessibility for styles in STYLESHEET
 
