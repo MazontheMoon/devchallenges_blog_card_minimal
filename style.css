@@ -4,9 +4,7 @@ Declare variables for page
 :root {
   /*color scheme*/
 
-  /*margin sizes - change depending on screen size*/
-
-  /*font sizes - change depending on screen size*/
+  /*fonts*/
 }
 
 /*======================================
@@ -38,9 +36,16 @@ p {
 Layout
 =================*/
 
+/*Grid*/
+
 /*================
 Section Styling
 =================*/
+/*Header box*/
+
+/*Image box*/
+
+/*Content box*/
 
 /*=====
 Footer
@@ -62,6 +67,3 @@ Responsiveness
 ===============*/
 
 /*Media queries for portable screen views - tablets and phones*/
-
-
-/*Media queries for print view*/
