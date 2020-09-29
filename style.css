@@ -37,6 +37,16 @@ Layout
 =================*/
 
 /*Grid*/
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "img content"
+    "footer footer";
+  margin: 0;
+  grid-gap: 0;
+}
 
 /*================
 Section Styling
