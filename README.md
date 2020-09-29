@@ -17,9 +17,6 @@
  * Atom
  * Github Desktop
 
- ## Versioning
-
- Version #1.1 - Initial Content
 
  ## Table of Contents
 
