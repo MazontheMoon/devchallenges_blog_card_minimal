@@ -5,6 +5,8 @@ Declare variables for page
   /*color scheme*/
 
   /*fonts*/
+--header-font: font-family: 'Roboto', sans-serif;
+--text-font: font-family: 'Alike', serif;
 }
 
 /*======================================
@@ -36,12 +38,6 @@ p {
 Layout
 =================*/
 
-/*Grid*/
-body {
-  display: flex;
-  flex-flow: column nowrap;
-}
-
 /*================
 Section Styling
 =================*/
@@ -55,7 +51,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "picture info"; 
+      "picture info";
     margin: 0;
     grid-gap: 0;
 }
@@ -69,6 +65,9 @@ img {
 
 section {
     grid-area: info;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 /*=====
