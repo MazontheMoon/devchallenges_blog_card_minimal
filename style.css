@@ -38,28 +38,45 @@ Layout
 
 /*Grid*/
 body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:
-    "header header"
-    "img content"
-    "footer footer";
-  margin: 0;
-  grid-gap: 0;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 /*================
 Section Styling
 =================*/
 /*Header box*/
+header {
 
+}
+
+/*main container*/
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "picture info"; 
+    margin: 0;
+    grid-gap: 0;
+}
 /*Image box*/
 
+img {
+    grid-area: picture;
+    width: 100%;
+}
 /*Content box*/
+
+section {
+    grid-area: info;
+}
 
 /*=====
 Footer
 ======*/
+footer {
+    grid-area: footer;
+}
 
 /*==========
 Link styles
