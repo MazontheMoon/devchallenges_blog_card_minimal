@@ -28,16 +28,38 @@ body * {
   margin: 0;
 }
 
-/*reset default font - never shall Time New Roman be seen agan!*/
 
+/*================
+Text and Fonts
+=================*/
+
+/*reset default font - never shall Time New Roman be seen agan!*/
 h1,
-p {
+h4,
+p,
+button {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-family: var(--header-font);
+    line-height: 150%;
+    font-size: 3.5rem;
+}
+
+h4,
+p,
+button {
+    font-family: var(--text-font);
 }
 
 /*================
 Layout
 =================*/
-
+main {
+    margin: 1rem;
+    padding: 1rem;
+}
 /*================
 Section Styling
 =================*/
@@ -68,7 +90,9 @@ section {
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
+    padding: 1rem;
 }
+
 
 /*=====
 Footer
