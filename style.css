@@ -5,8 +5,8 @@ Declare variables for page
   /*color scheme*/
 
   /*fonts*/
---header-font: font-family: 'Roboto', sans-serif;
---text-font: font-family: 'Alike', serif;
+  --heading-font: "Roboto Mono", monospace;
+  --text-font: "Arvo", serif;
 }
 
 /*======================================
@@ -28,7 +28,6 @@ body * {
   margin: 0;
 }
 
-
 /*================
 Text and Fonts
 =================*/
@@ -38,67 +37,64 @@ h1,
 h4,
 p,
 button {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 h1 {
-    font-family: var(--header-font);
-    line-height: 150%;
-    font-size: 3.5rem;
+  font-family: var(--heading-font);
+  line-height: 150%;
+  font-size: 3.5rem;
 }
 
 h4,
 p,
 button {
-    font-family: var(--text-font);
+  font-family: var(--text-font);
 }
 
 /*================
 Layout
 =================*/
 main {
-    margin: 1rem;
-    padding: 1rem;
+  margin: 1rem;
+  padding: 1rem;
 }
 /*================
 Section Styling
 =================*/
 /*Header box*/
 header {
-
 }
 
 /*main container*/
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "picture info";
-    margin: 0;
-    grid-gap: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "picture info";
+  margin: 0;
+  grid-gap: 0;
 }
 /*Image box*/
 
 img {
-    grid-area: picture;
-    width: 100%;
+  grid-area: picture;
+  width: 100%;
 }
 /*Content box*/
 
 section {
-    grid-area: info;
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 1rem;
+  grid-area: info;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem;
 }
-
 
 /*=====
 Footer
 ======*/
 footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
 /*==========
@@ -110,7 +106,6 @@ The little touches
 =================*/
 
 /*In case of image not found*/
-
 
 /*=============
 Responsiveness
