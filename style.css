@@ -90,18 +90,21 @@ section {
 }
 
 #section-header {
-  flex: 33%;
+  margin: 1.5rem auto;
 }
 
 #section-content {
-  flex: 33%;
+  font-size: 1.5rem;
+  margin: 1.5rem auto;
 }
 
 /*button style*/
 #homepage-button {
   background-color: var(--dark-background);
   color: var(--light-text);
+  font-size: 1.2rem;
   line-height: 150%;
+  margin: 1.5rem 0;
   padding: 1rem;
   width: 50%;
 }
@@ -133,3 +136,17 @@ Responsiveness
 ===============*/
 
 /*Media queries for portable screen views - tablets and phones*/
+
+@media only screen and (max-width: 1024px) {
+  /*change to single column layout*/
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "picture"
+      "info";
+    margin: 0 auto;
+    padding: 1rem;
+    grid-gap: 0;
+  }
+}
