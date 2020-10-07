@@ -57,35 +57,49 @@ button {
 /*================
 Layout
 =================*/
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10vh auto 10vh;
+  grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+  grid-gap: 0;
+}
 
 /*================
 Section Styling
 =================*/
 /*Header box*/
 header {
+  grid-area: header;
 }
 
-/*main container*/
+/*page container*/
 main {
-  display: grid;
+  grid-area: main;
+  display: inherit;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "picture info";
-  margin: 10vh auto;
-  padding: 1rem;
-  grid-gap: 0;
+  grid-template-areas: "image content";
+  grid-gap: 2rem;
 }
 /*Image box*/
 
-img {
-  grid-area: picture;
-  width: 100%;
+figure {
+  grid-area: image;
 }
+
+img {
+  max-width: 100%;
+}
+
 /*Content box*/
-section {
-  grid-area: info;
-  width: 100%;
+#content {
+  grid-area: content;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-between;
   padding: 1rem;
 }
 
@@ -104,7 +118,6 @@ section {
   color: var(--light-text);
   font-size: 1.2rem;
   line-height: 150%;
-  margin: 1.5rem 0;
   padding: 1rem;
   width: 50%;
 }
@@ -143,8 +156,8 @@ Responsiveness
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-      "picture"
-      "info";
+      "image"
+      "content";
     margin: 0 auto;
     padding: 1rem;
     grid-gap: 0;
