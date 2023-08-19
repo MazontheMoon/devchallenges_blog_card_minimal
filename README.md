@@ -6,16 +6,13 @@
 
  Web Browser
 
- ## Built With
+ ## Technologies and Frameworks
 
  * HTML
  * CSS
- * Sweat and tears and laughter
 
- ## Software
-
- * Atom
- * Github Desktop
+ * VS code
+ * Git
 
 
  ## Table of Contents
@@ -48,15 +45,10 @@
  ## Resources
 
  * devchallenges.io
- * netlify
- * MDN
- * W3Schools
- * Google fonts
-
 
  ## Acknowledgments
 
- We would like to offer our appreciation to Spotify and the *This is Ramin Djawadi* playlist for providing the suitable background ambiance for this project
+ We would like to offer our appreciation to Spotify and the *This is Ramin Djawadi* playlist for providing the suitable background noise for this project
 
  ## License
 
