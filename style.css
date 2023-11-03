@@ -2,23 +2,23 @@
 Page  Variables
 ================*/
 :root {
-  /*color scheme*/
-  --col-bg: #FAFAF9;
-  --col-headline: #20293A;
-  --col-text: #6C727F;
-  --col-tag-font: #883AE1;
-  --col-tag-bg: #E6D6FC;
-
-  --col-shadow:0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+  /*colors*/
+  --cl-fnt-title: #20293A;
+  --cl-fnt-text: #6C727F;
+  --cl-fnt-tag: #883AE1;
+  --cl-primary-bg: #FAFAF9;
+  --cl-border: #6C727F;
 
   /*fonts*/
-  --fnt-primary:'Sora', sans-serif;
-
+  --font: 'Sora', sans-serif;
   --fnt-sz-title: 1.125rem;
-  --fnt-sz-body: 0.875rem;
-  --fnt-sz-tag: 0.75rem;
-  --fnt-sz-sml: 0.625rem;
-}
+  --fnt-sz-text: 0.875rem;
+  --fnt-sz-sml-text: 0.75rem;
+  --fnt-sz-tag: 0.625rem;
+
+  /*shadow */
+  --shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+
 
 /*======================================
 Back to Basics - reset browser defaults
@@ -39,8 +39,10 @@ body * {
   margin: 0;
 }
 
-
-/*In the dreaded case of image not found!*/
+/*================
+The little touches
+=================*/
+/*In the dreaded case of image not found*/
 img:after {
   display: inherit;
   position: absolute;

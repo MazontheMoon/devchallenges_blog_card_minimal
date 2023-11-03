@@ -1,6 +1,6 @@
-# devchallenges.io Responsive Project - 404 Not Found
+# devchallenges.io Responsive Project - Minimal Blog card
 
- Responsive Project for [devchallenges.io](https://devchallenges.io/editor/solution/1013) to recreate an example of a minimalistic blog card
+ Responsive Project for [devchallenges.io](https://devchallenges.io/challenge/27) to recreate an example of a minimal blog card
 
  ## Prerequisites
 
@@ -11,11 +11,7 @@
  * HTML
  * CSS
 
- * VS code
- * Git
-
-
- ## Authors
+ ## Author
 
  * **Mary Ronan** - [MazOnTheMoon](https://github.com/MazontheMoon)
 
