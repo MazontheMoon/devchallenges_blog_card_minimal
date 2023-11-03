@@ -6,15 +6,18 @@
 
  Web Browser
 
- ## Built With
+ ## Technologies and Frameworks
 
  * HTML
  * CSS
 
  ## Author
- 
- **Mary Ronan** - [MazOnTheMoon](https://github.com/MazontheMoon)
 
+ * **Mary Ronan** - [MazOnTheMoon](https://github.com/MazontheMoon)
+
+ ## Resources
+
+ * [devchallenges.io](https://devchallenges.io)
 
  ## License
 
