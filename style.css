@@ -18,7 +18,7 @@ Page  Variables
 
   /*shadow */
   --shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
-
+}
 
 /*======================================
 Back to Basics - reset browser defaults
@@ -39,6 +39,49 @@ body * {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
+:is(h1, p, figcaption) {
+  font-family: var(--font);
+}
+/*======
+Layout
+========*/
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+max-width: 340px;
+padding: 1rem;
+box-shadow: var(--shadow);
+border-radius: 1rem;
+}
+
+/*====
+Text
+====*/
+
+h1 {
+  font-size: var(--fnt-sz-title);
+}
+
+.card-content {
+font-size: var(--fnt-sz-text);
+}
+
+.author {
+  font-size: var(--fnt-sz-sml-text);
+}
+
+figcaption {
+  font-size: var(--fnt-sz-tag);
+  margin: 0 0.4rem;
+}
 /*================
 The little touches
 =================*/
@@ -58,4 +101,3 @@ img:after {
   text-align: center;
   content: "Image of " attr(alt) " was not found";
 }
-
