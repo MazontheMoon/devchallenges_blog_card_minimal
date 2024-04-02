@@ -6,6 +6,7 @@ Page  Variables
   --cl-fnt-title: #20293A;
   --cl-fnt-text: #6C727F;
   --cl-fnt-tag: #883AE1;
+  --cl-tag-bg: #E6D6FC;
   --cl-primary-bg: #FAFAF9;
   --cl-border: #6C727F;
 
@@ -20,9 +21,9 @@ Page  Variables
   --shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
 }
 
-/*======================================
-Back to Basics - reset browser defaults
-=======================================*/
+/*=====================
+reset browser defaults
+======================*/
 html,
 body {
   scroll-behavior: smooth;
@@ -45,18 +46,19 @@ img {
 
 :is(h1, p, figcaption) {
   font-family: var(--font);
+  color: var(--cl-fnt-text);
 }
+
 /*======
 Layout
 ========*/
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-content: center;
 }
 
 .card {
-max-width: 340px;
+max-width: 368px;
 padding: 1rem;
 box-shadow: var(--shadow);
 border-radius: 1rem;
@@ -68,24 +70,44 @@ Text
 
 h1 {
   font-size: var(--fnt-sz-title);
+  margin-bottom: 0.6rem;
+  color: var(--cl-fnt-title);
 }
 
 .card-content {
 font-size: var(--fnt-sz-text);
+line-height: 150%;
 }
 
 .author {
+  border-top: var(--cl-fnt-text) solid 1px;
   font-size: var(--fnt-sz-sml-text);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+figure {
+  margin-bottom: 1rem;
+}
+
+figure img {
+  border-radius: 10px;
+  margin-bottom: 0.8rem;;
 }
 
 figcaption {
+  display: inline;
   font-size: var(--fnt-sz-tag);
-  margin: 0 0.4rem;
+  font-weight: bold;
+  padding: 0.4rem 0.6rem;
+  color: var(--cl-fnt-tag);
+  background-color: var(--cl-tag-bg);
+  border-radius: 1rem;
 }
 /*================
 The little touches
 =================*/
-/*In the dreaded case of image not found*/
+/*In case of image not found*/
 img:after {
   display: inherit;
   position: absolute;
