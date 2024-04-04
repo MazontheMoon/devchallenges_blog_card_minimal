@@ -2,6 +2,7 @@
 
  Responsive Project for [devchallenges.io](https://devchallenges.io/challenge/27) to recreate an example of a minimal blog card
 
+![Project Thumbnail](/assets/thumbnail.png)
  ## Prerequisites
 
  Web Browser
