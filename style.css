@@ -53,13 +53,14 @@ img {
 Layout
 ========*/
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 .card {
 max-width: 368px;
+max-height: 400px;
 padding: 1rem;
 box-shadow: var(--shadow);
 border-radius: 1rem;
