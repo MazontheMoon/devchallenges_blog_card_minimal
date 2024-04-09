@@ -53,8 +53,9 @@ img {
 Layout
 ========*/
 body {
-  display: grid;
-  place-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -115,7 +116,7 @@ img:after {
   left: 0;
   width: 100%;
   padding: 0.3rem;
-  border: 0.1rem dashed var(--dark-background);
+  border: 0.1rem dashed var(--cl-fnt-title);
   background-color: grey;
   z-index: 10;
   font-family: verdana;
